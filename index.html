@@ -5,374 +5,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icons8-marcador-de-mapa-16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Mapa de Carreira em TI</title>
+    <title>Dashboard de Carreira - Eder Daniel</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
+    <div class="container new-layout">
+
+        <header class="header">
             <h1>Mapa de Carreira em TI</h1>
-            <p>Visualização completa do perfil profissional, competências e trajetória de carreira</p>
-            
-        </div>
+            <p>Visualização completa do perfil profissional, competências e trajetória</p>
+            <button id="theme-toggle" class="btn-theme-toggle" aria-label="Alternar Tema Escuro/Claro">
+                ☀️
+            </button>
+        </header>
 
-        <div class="profile-card">
-            <div class="profile-avatar"><img src="img/ederr.jpg" alt=""></div>
-            <div class="profile-info">
-                <h2>Eder Daniel Vieira Da Silva</h2>
-                <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
-                <div class="tags">
-                    <span class="tag">Figma</span>
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">ReactJS</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">Python</span>
+        <main class="main-content-grid">
+
+            <div class="sidebar card">
+                <div class="profile-avatar">
+                    <img src="img/ederr.jpg" alt="Foto de Perfil de Eder Daniel">
                 </div>
-                <div class="contact-info">
-                    <span>📍 São Paulo, SP</span>
-                    <span>📧 ederdaniel12467@gmail.com</span>
-                    <span>📱 (11) 91627-8187</span>
-                </div>
-              <div class="contact-info">
-    <a href="https://github.com/eder64ghjhj" target="_blank" class="social-link">
-        🔗 GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/eder-daniel44/" target="_blank" class="social-link">
-        💼 LinkedIn
-    </a>
-</div>
-<div class="cv-section">
-    <!-- Removemos o "assets/" do caminho -->
-    <a class="btn-cv" href="assets/PROA -Curriculo-Eder.pdf" target="_blank">
-        📄 Baixar meu curriculo
-    </a>
-</div>
-            </div>
-        </div>
+                <div class="profile-info">
+                    <h2>Eder Daniel Vieira Da Silva</h2>
+                    <p class="profile-role">Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
 
-        <div class="skills-section">
-            <h2>Competências Técnicas e Comportamentais</h2>
-            <p>Avaliação das minhas habilidades técnicas e soft skills desenvolvidas ao longo da carreira</p>
-
-            <div class="skills-grid">
-                <div class="skills-column">
-                    <h3>⚙️ Hard Skills</h3>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Figma</span>
-                            <span class="skill-percentage">35%</span>
+                    <div class="contact-group">
+                        <h3 class="group-title"><i class="fas fa-id-card"></i> Contato</h3>
+                        <div class="contact-info">
+                            <span><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
+                            <span><i class="fas fa-envelope"></i> ederdaniel12467@gmail.com</span>
+                            <span><i class="fas fa-phone"></i> (11) 91627-8187</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
-                        </div>
-                        <div class="skill-details">Prototipagem</div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">HTML5</span>
-                            <span class="skill-percentage">60%</span>
+                    <div class="contact-group">
+                        <h3 class="group-title"><i class="fas fa-share-alt"></i> Conecte-se</h3>
+                        <div class="contact-links">
+                            <a href="https://github.com/eder64ghjhj" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/eder-daniel44/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                        <div class="skill-details"></div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <a class="btn-cv" href="assets/PROA -Curriculo-Eder.pdf" target="_blank">
+                            <i class="fas fa-file-download"></i> Baixar meu Currículo
+                        </a>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">CSS3</span>
-                            <span class="skill-percentage">40%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                        <div class="skill-details"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage">45%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 55%"></div>
-                        </div>
-                        <div class="skill-details"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">ReactJS</span>
-                            <span class="skill-percentage">40%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 40%"></div>
-                        </div>
-                        <div class="skill-details"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Java</span>
-                            <span class="skill-percentage">65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%"></div>
-                        </div>
-                        <div class="skill-details"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage">15%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 35%"></div>
-                        </div>
-                        <div class="skill-details"></div>
-                    </div>
-                </div>
-
-                <div class="skills-column">
-                    <h3>👥 Soft Skills</h3>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Comunicação</span>
-                            <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                        <div class="skill-details">Apresentações e documentação técnica</div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Trabalho em Equipe</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                        <div class="skill-details">Colaboração e metodologias ágeis</div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Resolução de Problemas</span>
-                            <span class="skill-percentage">78%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                        <div class="skill-details">Análise crítica e debugging</div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Liderança</span>
-                            <span class="skill-percentage">40%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                        <div class="skill-details">Mentoria e gestão de projetos</div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Adaptabilidade</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                        <div class="skill-details">Aprendizado contínuo</div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Gestão de Tempo</span>
-                            <span class="skill-percentage">74%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                        <div class="skill-details">Priorização e produtividade</div>
-                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="career-section">
-            <h2>Mapa de Carreira em TI</h2>
-            <p>Jornada profissional desde o início até onde pretendo chegar</p>
+            <div class="content-panel">
 
-            
-            <div class="timeline">
-                <div class="career-item current">
-                    <div class="career-header">
-                        <div class="career-title">
-                            🎓 Desenvolvedor Júnior
-                        </div>
-                        <div class="career-badge">
-                            <span class="level-badge">Júnior</span>
-                            <span class="year-badge">2025-2026</span>
-                        </div>
+                <div class="tags-card card">
+                    <h3 class="card-title"><i class="fas fa-code"></i> Stack Principal</h3>
+                    <div class="tags profile-tags">
+                        <span class="tag tag-blue">Figma</span>
+                        <span class="tag tag-red">HTML5</span>
+                        <span class="tag tag-blue">CSS3</span>
+                        <span class="tag tag-yellow">JavaScript</span>
+                        <span class="tag tag-cyan">ReactJS</span>
+                        <span class="tag tag-orange">Java</span>
+                        <span class="tag tag-green">Python</span>
                     </div>
-                    <p class="career-description">
-                        Início da carreira focado em aprendizado de fundamentos e desenvolvimento de projetos simples.
-                    </p>
-                    <div class="career-competencies">
-                        <div class="competencies-label">Principais Competências:</div>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">APIs REST</span>
-                            <span class="tag">Banco de Dados (MySQL)</span>
-                        </div>
-                    </div>
-                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 3.000 - R$ 4.500</p>
                 </div>
 
-                
-                
-              
+                <div class="skills-section card">
+                    <h2 class="card-title"><i class="fas fa-chart-bar"></i> Competências Técnicas e Comportamentais</h2>
+                    <p class="card-subtitle">Avaliação das minhas habilidades desenvolvidas ao longo da carreira.</p>
 
-                <div class="career-item future">
-                    <div class="career-header">
-                        <div class="career-title">
-                            💼 Desenvolvedor Full Stack Pleno
+                    <div class="skills-grid">
+                        <div class="skills-column">
+                            <h3><i class="fas fa-cogs"></i> Hard Skills</h3>
+
+                            <div class="skill-item" data-percentage="35">
+                                <div class="skill-header">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">35%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 35%"></div>
+                                </div>
+                                <div class="skill-details">Prototipagem</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="60">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <div class="skill-details">Semântica e Acessibilidade</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="40">
+                                <div class="skill-header">
+                                    <span class="skill-name">CSS3</span>
+                                    <span class="skill-percentage">40%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <div class="skill-details">Layout Responsivo (Flexbox/Grid)</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="45">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">45%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 45%"></div>
+                                </div>
+                                <div class="skill-details">Lógica de Programação e DOM</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="40">
+                                <div class="skill-header">
+                                    <span class="skill-name">ReactJS</span>
+                                    <span class="skill-percentage">40%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <div class="skill-details">Componentes e Hooks</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="65">
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                                <div class="skill-details">Programação Orientada a Objetos</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="15">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">15%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 15%"></div>
+                                </div>
+                                <div class="skill-details">Básico para Scripts</div>
+                            </div>
                         </div>
-                        <div class="career-badge">
-                            <span class="level-badge">Pleno</span>
-                            <span class="year-badge">2027-2030</span>
+
+                        <div class="skills-column">
+                            <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
+
+                            <div class="skill-item" data-percentage="75">
+                                <div class="skill-header">
+                                    <span class="skill-name">Comunicação</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                                <div class="skill-details">Apresentações e documentação técnica</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="85">
+                                <div class="skill-header">
+                                    <span class="skill-name">Trabalho em Equipe</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                <div class="skill-details">Colaboração e metodologias ágeis</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="78">
+                                <div class="skill-header">
+                                    <span class="skill-name">Resolução de Problemas</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                                <div class="skill-details">Análise crítica e debugging</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="40">
+                                <div class="skill-header">
+                                    <span class="skill-name">Liderança</span>
+                                    <span class="skill-percentage">40%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <div class="skill-details">Mentoria e gestão de projetos</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="85">
+                                <div class="skill-header">
+                                    <span class="skill-name">Adaptabilidade</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                <div class="skill-details">Aprendizado contínuo</div>
+                            </div>
+
+                            <div class="skill-item" data-percentage="74">
+                                <div class="skill-header">
+                                    <span class="skill-name">Gestão de Tempo</span>
+                                    <span class="skill-percentage">74%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 74%"></div>
+                                </div>
+                                <div class="skill-details">Priorização e produtividade</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="career-description">
-                        Desenvolvimento de aplicações mais complexas, trabalho em equipe e especialização em tecnologias
-                        específicas.
-                    </p>
-                    <div class="career-competencies">
-                        <div class="competencies-label">Principais Competências:</div>
-                        <div class="tags">
-                   <span class="tag">Java (Spring Ecosystem)</span>
-                            <span class="tag">Front-end Moderno (React)</span>
-                            <span class="tag">Python (Integrações)</span>
-                            <span class="tag">Banco de Dados SQL</span>
-                            <span class="tag">DevOps Básico</span>
-                        </div>
-                    </div>
-                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 5.000 - R$ 8.000</p>
                 </div>
 
-                <div class="career-item future">
-                    <div class="career-header">
-                        <div class="career-title">
-                            🚀 Desenvolvedor Full Stack Sênior
-                        </div>
-                        <div class="career-badge">
-                            <span class="level-badge">Sênior</span>
-                            <span class="year-badge">2030-2033</span>
-                        </div>
-                    </div>
-                    <p class="career-description">
-                        Liderança técnica, arquitetura de sistemas, mentoria de desenvolvedores juniores e tomada de
-                        decisões técnicas.
-                    </p>
-                    <div class="career-competencies">
-                        <div class="competencies-label">Principais Competências:</div>
-                        <div class="tags">
-                          <span class="tag">Code Review & Quality</span>
-                            <span class="tag">Arquitetura de Software</span>
-                            <span class="tag">Debugging Avançado</span>
-                            <span class="tag">Security (AppSec)</span>
-                            <span class="tag">Mentoria Técnica</span>
-                        </div>
-                    </div>
-                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 8.000 - R$ 15.000</p>
-                </div>
+                <div class="career-section card">
+                    <h2 class="card-title"><i class="fas fa-route"></i> Minha Jornada de Carreira</h2>
+                    <p class="card-subtitle">Jornada profissional desde o início até onde pretendo chegar. Clique para ver os detalhes!</p>
 
-                <div class="career-item future">
-                    <div class="career-header">
-                        <div class="career-title">
-                            💎 Staff Engineer (Mentor Técnico)
+                    <div class="timeline">
+                        
+                        <div class="career-item timeline-item" data-career-level="junior">
+                            <div class="career-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="career-content">
+                                <div class="career-header">
+                                    <div class="career-title">Desenvolvedor Júnior</div>
+                                    <div class="career-badge">
+                                        <span class="level-badge junior-level">Júnior</span>
+                                        <span class="year-badge">2025-2026</span>
+                                    </div>
+                                </div>
+                                <p class="career-description">Início da carreira focado em aprendizado de fundamentos e desenvolvimento de projetos simples. Foco em adquirir experiência prática e se integrar à equipe.</p>
+                                <div class="career-details-box"> <div class="career-competencies">
+                                        <div class="competencies-label">Competências Focais:</div>
+                                        <div class="tags">
+                                            <span class="tag tag-red">HTML</span>
+                                            <span class="tag tag-blue">CSS</span>
+                                            <span class="tag tag-yellow">JavaScript</span>
+                                            <span class="tag tag-dark">Git</span>
+                                            <span class="tag tag-gray">APIs REST</span>
+                                            <span class="tag tag-orange">MySQL</span>
+                                        </div>
+                                    </div>
+                                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 3.000 - R$ 4.500</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="career-badge">
-                            <span class="level-badge">Especialista</span>
-                            <span class="year-badge">2033-2038</span>
-                        </div>
-                    </div>
-                   <p class="career-description">
-                        Referência técnica da empresa. Atua resolvendo os problemas mais complexos (Troubleshooting) e compartilhando conhecimento. Foco total em elevar o nível técnico do time através de mentoria ativa e suporte contínuo.
-                    </p>
-                    <div class="career-competencies">
-                        <div class="competencies-label">Principais Competências:</div>
-                        <div class="tags">
-                          <span class="tag">Mentoria Técnica</span>
-                            <span class="tag">Arquitetura Escalável</span>
-                            <span class="tag">Resolução de Problemas Críticos</span>
-                            <span class="tag">Compartilhamento de Conhecimento</span>
-                            <span class="tag">Liderança por Influência</span>
-                        </div>
-                    </div>
-                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 16.000 - R$ 27.000</p>
-                </div>
 
-                <div class="career-item future">
-                    <div class="career-header">
-                        <div class="career-title">
-                            🏗️ Arquiteto de Software
+                        <div class="career-item timeline-item" data-career-level="pleno">
+                            <div class="career-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="career-content">
+                                <div class="career-header">
+                                    <div class="career-title">Desenvolvedor Full Stack Pleno</div>
+                                    <div class="career-badge">
+                                        <span class="level-badge pleno-level">Pleno</span>
+                                        <span class="year-badge">2027-2030</span>
+                                    </div>
+                                </div>
+                                <p class="career-description">Desenvolvimento de aplicações mais complexas, trabalho em equipe e especialização em tecnologias específicas, com maior autonomia e responsabilidade por módulos inteiros.</p>
+                                <div class="career-details-box">
+                                    <div class="career-competencies">
+                                        <div class="competencies-label">Competências Focais:</div>
+                                        <div class="tags">
+                                            <span class="tag tag-orange">Java (Spring)</span>
+                                            <span class="tag tag-cyan">React Avançado</span>
+                                            <span class="tag tag-green">Python (Integrações)</span>
+                                            <span class="tag tag-dark">SQL Tuning</span>
+                                            <span class="tag tag-gray">DevOps Básico</span>
+                                        </div>
+                                    </div>
+                                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 5.000 - R$ 8.000</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="career-badge">
-                            <span class="level-badge">Arquiteto</span>
-                            <span class="year-badge">2038+</span>
+
+                        <div class="career-item timeline-item" data-career-level="senior">
+                            <div class="career-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="career-content">
+                                <div class="career-header">
+                                    <div class="career-title">Desenvolvedor Full Stack Sênior</div>
+                                    <div class="career-badge">
+                                        <span class="level-badge senior-level">Sênior</span>
+                                        <span class="year-badge">2030-2033</span>
+                                    </div>
+                                </div>
+                                <p class="career-description">Liderança técnica, arquitetura de sistemas, mentoria de desenvolvedores juniores e tomada de decisões técnicas sobre a stack e os projetos da equipe.</p>
+                                <div class="career-details-box">
+                                    <div class="career-competencies">
+                                        <div class="competencies-label">Competências Focais:</div>
+                                        <div class="tags">
+                                            <span class="tag tag-gray">Code Review & Quality</span>
+                                            <span class="tag tag-dark">Arquitetura de Software</span>
+                                            <span class="tag tag-yellow">Debugging Avançado</span>
+                                            <span class="tag tag-red">Security (AppSec)</span>
+                                            <span class="tag tag-blue">Mentoria Técnica</span>
+                                        </div>
+                                    </div>
+                                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 8.000 - R$ 15.000</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="career-item timeline-item" data-career-level="staff-engineer">
+                            <div class="career-icon"><i class="fas fa-star"></i></div>
+                            <div class="career-content">
+                                <div class="career-header">
+                                    <div class="career-title">Staff Engineer (Mentor Técnico)</div>
+                                    <div class="career-badge">
+                                        <span class="level-badge specialist-level">Especialista</span>
+                                        <span class="year-badge">2033-2038</span>
+                                    </div>
+                                </div>
+                                <p class="career-description">Referência técnica da empresa. Atua resolvendo os problemas mais complexos (Troubleshooting) e compartilhando conhecimento, elevando o nível técnico do time.</p>
+                                <div class="career-details-box">
+                                    <div class="career-competencies">
+                                        <div class="competencies-label">Competências Focais:</div>
+                                        <div class="tags">
+                                            <span class="tag tag-blue">Mentoria Técnica</span>
+                                            <span class="tag tag-dark">Arquitetura Escalável</span>
+                                            <span class="tag tag-red">Resolução de Críticos</span>
+                                            <span class="tag tag-yellow">Conhecimento Profundo</span>
+                                            <span class="tag tag-green">Liderança por Influência</span>
+                                        </div>
+                                    </div>
+                                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 16.000 - R$ 27.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="career-item timeline-item" data-career-level="architect">
+                            <div class="career-icon"><i class="fas fa-building"></i></div>
+                            <div class="career-content">
+                                <div class="career-header">
+                                    <div class="career-title">Arquiteto de Software</div>
+                                    <div class="career-badge">
+                                        <span class="level-badge architect-level">Arquiteto</span>
+                                        <span class="year-badge">2038+</span>
+                                    </div>
+                                </div>
+                                <p class="career-description">Definição de arquiteturas escaláveis, padrões de desenvolvimento e estratégias tecnológicas da empresa. Visão de negócio e inovação.</p>
+                                <div class="career-details-box">
+                                    <div class="career-competencies">
+                                        <div class="competencies-label">Competências Focais:</div>
+                                        <div class="tags">
+                                            <span class="tag tag-dark">System Design</span>
+                                            <span class="tag tag-blue">Microsserviços</span>
+                                            <span class="tag tag-green">Cloud (AWS/Azure)</span>
+                                            <span class="tag tag-red">Estratégia Tecnológica</span>
+                                            <span class="tag tag-orange">Inovação</span>
+                                        </div>
+                                    </div>
+                                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 18.000 - R$ 30.000</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <p class="career-description">
-                        Definição de arquiteturas escaláveis, padrões de desenvolvimento e estratégias tecnológicas da
-                        empresa.
-                    </p>
-                    <div class="career-competencies">
-                        <div class="competencies-label">Principais Competências:</div>
-                        <div class="tags">
-                         <span class="tag">System Design</span>
-                            <span class="tag">Arquitetura de Microsserviços</span>
-                            <span class="tag">Cloud Computing (AWS/Azure)</span>
-                            <span class="tag">Padrões de Integração</span>
-                            <span class="tag">Visão de Negócio</span>
-                            <span class="tag">Estratégia Tecnológica</span>
-                            <span class="tag">Inovação</span>
-                        </div>
-                    </div>
-                    <p class="career-salary"><strong>Faixa salarial:</strong> R$ 18.000 - R$ 30.000</p>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 
-    <script>
-        // Animação das barras de progresso ao carregar a página
-        window.addEventListener('load', () => {
-            const progressBars = document.querySelectorAll('.skill-progress');
-            progressBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
